@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>addNewTask</ion-title>
+    <ion-icon
+      name="close"
+      slot="end"
+      size="large"
+      class="ion-padding"
+      (click)="dismiss()"
+    ></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-textarea
+        [(ngModel)]="taskName"
+        placeholder="write Your Name"
+      ></ion-textarea>
+    </ion-item>
+
+    <ion-button
+      class="ion-margin"
+      expand="block"
+      (click)="update()"
+    ></ion-button>
+  </ion-card>
+</ion-content>
